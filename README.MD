@@ -1,18 +1,20 @@
 # ESEP Grade Calculator
 
-This library is a simple utility to calculate your grades.
+This project is a Go library for calculating a student's final course grade.
 
-Runtime requirements:
-Golang 1.24+
+The calculator supports three grade categories:
 
-Run unit tests:
-```
-cd grade_calculator/
-go test ./...
-```
+- Assignments
+- Exams
+- Essays
 
-Run unit tests with code coverage:
-```
-cd grade_calculator/
-go test -coverprofile=coverage.txt ./...
-```
+The final numerical grade is calculated using weighted averages for each category and then converted into a final result.
+
+## Requirements
+
+- Go 1.24 or newer
+
+Check your installed Go version with:
+
+```bash
+go version
